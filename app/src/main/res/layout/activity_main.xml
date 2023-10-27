@@ -4,15 +4,117 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/black_variant">
+<!--    android:paddingHorizontal="32dp"-->
+<!--    android:paddingVertical="48dp">-->
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/math5_logo"
+        android:importantForAccessibility="no"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
+        android:id="@+id/app_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:fontFamily="@font/martel_bold"
+        android:text="@string/app_name"
+        android:textAppearance="?attr/textAppearanceHeadline4"
+        android:textColor="@color/light_cream"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/spinner_container"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@drawable/black_rounded_corners"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/app_name">
+
+        <TextView
+            android:id="@+id/select_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="@string/select"
+            android:textAppearance="?attr/textAppearanceBody1"
+            android:textColor="@color/light_cream" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:padding="8dp"
+            android:layout_gravity="center_horizontal"
+            android:spinnerMode="dropdown"
+            android:dropDownVerticalOffset="55dp"
+            style="@style/SpinnerTheme"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/formula"
+        android:layout_width="match_parent"
+        android:layout_height="194dp"
+        android:background="@drawable/cream_top_rounded_corners"
+        tools:srcCompat="@drawable/quadratic_equationv2"
+        android:scaleType="fitCenter"
+        android:importantForAccessibility="no"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="32dp"
+        app:layout_constraintTop_toBottomOf="@id/spinner_container"/>
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/black_rounded_corners"
+        android:layout_marginHorizontal="32dp"
+        android:paddingHorizontal="32dp"
+        app:layout_constraintTop_toBottomOf="@id/formula">
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="32dp"
+        android:background="@drawable/cream_rounded_corners"
+        android:text="@string/calculate"
+        android:textAppearance="?attr/textAppearanceBody1"
+        android:fontFamily="@font/open_sans_semibold"
+        app:layout_constraintTop_toBottomOf="@id/container"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:background="@drawable/grey_rounded_corners"
+        app:layout_constraintTop_toBottomOf="@+id/calculate">
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

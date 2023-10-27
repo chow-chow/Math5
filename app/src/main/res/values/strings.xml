@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Math5</string>
+    <string name="select">SELECT A EQUATION</string>
+    <string name="a_tag">Input a:</string>
+    <string name="b_tag">Input b:</string>
+    <string name="c_tag">Input c:</string>
+    <string name="quadratic_hint">Constant value</string>
+    <string name="calculate">CALCULATE</string>
+    <string-array name="formulas_array">
+        <item>Quadratic equation</item>
+        <item>Simultaneous equations</item>
+        <item>Ohm\'s Law</item>
+    </string-array>
 </resources>

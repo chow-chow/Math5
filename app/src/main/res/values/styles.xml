@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SpinnerTheme" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/spinner_background</item>
+        <item name="android:popupBackground">@drawable/dark_rounded_corners</item>
+        <item name="android:textColor">@color/light_cream</item>
+    </style>
+
+    <style name="EditTextTheme" parent="android:Widget.EditText">
+        <item name="android:background">@drawable/grey_rounded_corners</item>
+        <item name="android:textColorHint">@color/light_opac_cream</item>
+        <item name="android:textColor">@color/cream</item>
+        <item name="android:gravity">center</item>
+        <item name="android:inputType">numberDecimal</item>
+    </style>
+</resources>
