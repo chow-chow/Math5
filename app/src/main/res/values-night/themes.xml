@@ -3,5 +3,19 @@
     <style name="Base.Theme.Math5" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorSecondary">@color/black_variant</item>
+        <item name="colorSecondaryVariant">@color/dark_grey</item>
+        <item name="colorOnSecondary">@color/cream</item>
+
+        <!-- Primary Color -->
+        <item name="colorPrimary">@color/cream</item>
+        <item name="colorPrimaryVariant">@color/light_cream</item>
+        <item name="colorOnPrimary">@color/black_variant</item>
+
+        <!-- Accent Color -->
+        <item name="colorAccent">@color/black_variant</item>
+
+        <item name="colorOnSurface">@color/cream</item>
+        <item name="colorOnSurfaceInverse">@color/dark_grey</item>
     </style>
 </resources>

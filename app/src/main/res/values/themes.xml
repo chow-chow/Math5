@@ -6,7 +6,7 @@
         <!-- Secondary Color -->
         <item name="colorSecondary">@color/black_variant</item>
         <item name="colorSecondaryVariant">@color/dark_grey</item>
-        <item name="colorOnSecondary">@color/dark_grey</item>
+        <item name="colorOnSecondary">@color/cream</item>
 
         <!-- Primary Color -->
         <item name="colorPrimary">@color/cream</item>
@@ -15,6 +15,9 @@
 
         <!-- Accent Color -->
         <item name="colorAccent">@color/black_variant</item>
+
+        <item name="colorOnSurface">@color/cream</item>
+        <item name="colorOnSurfaceInverse">@color/dark_grey</item>
     </style>
 
     <style name="Theme.Math5" parent="Base.Theme.Math5" />
