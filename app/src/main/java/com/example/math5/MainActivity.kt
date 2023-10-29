@@ -10,6 +10,7 @@ import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.EditText
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.example.math5.const.Options
 import com.example.math5.databinding.ActivityMainBinding
 import kotlin.math.sqrt
@@ -23,6 +24,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
+        installSplashScreen()
         setContentView(binding.root)
 
         // Creating an ArrayAdapter from the string-array and defining the default spinner layout
@@ -137,6 +139,8 @@ class MainActivity : AppCompatActivity() {
     private fun displayFirstDegree() {
         binding.formula.setImageResource(R.drawable.firstdegree)
         binding.container.removeAllViews()
+        binding.calculate.isEnabled = false
+        binding.result.text = getString(R.string.instruction)
         LayoutInflater.from(this).inflate(R.layout.firstdegree_layout, binding.container, true)
         val aEdit = findViewById<EditText>(R.id.a_input)
         val bEdit = findViewById<EditText>(R.id.b_input)
@@ -147,6 +151,8 @@ class MainActivity : AppCompatActivity() {
     private fun displaySimultaneous() {
         binding.formula.setImageResource(R.drawable.simultaneous)
         binding.container.removeAllViews()
+        binding.calculate.isEnabled = false
+        binding.result.text = getString(R.string.instruction)
         LayoutInflater.from(this).inflate(R.layout.simultaneous_layout, binding.container, true)
         val a1Edit = findViewById<EditText>(R.id.a1_input)
         val a2Edit = findViewById<EditText>(R.id.a2_input)
@@ -161,6 +167,8 @@ class MainActivity : AppCompatActivity() {
     private fun displayQuadratic() {
         binding.formula.setImageResource(R.drawable.quadratic)
         binding.container.removeAllViews()
+        binding.calculate.isEnabled = false
+        binding.result.text = getString(R.string.instruction)
         LayoutInflater.from(this).inflate(R.layout.quadratic_layout, binding.container, true)
         val aEdit = findViewById<EditText>(R.id.a_input)
         val bEdit = findViewById<EditText>(R.id.b_input)

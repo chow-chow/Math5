@@ -9,14 +9,14 @@
     <style name="EditTextTheme" parent="android:Widget.EditText">
         <item name="android:background">@drawable/grey_rounded_corners</item>
         <item name="android:textColorHint">@color/light_opac_cream</item>
-        <item name="android:textAppearance">?attr/textAppearanceBody2</item>
+        <item name="android:textSize">15sp</item>
         <item name="android:textColor">@color/cream</item>
         <item name="android:gravity">center</item>
         <item name="android:inputType">numberDecimal</item>
     </style>
 
     <style name="TextViewsInputsTheme" parent="android:Widget.TextView">
-        <item name="android:textAppearance">?attr/textAppearanceBody1</item>
+        <item name="android:textSize">16sp</item>
         <item name="android:textColor">@color/light_cream</item>
         <item name="android:fontFamily">@font/source_serif_pro</item>
     </style>

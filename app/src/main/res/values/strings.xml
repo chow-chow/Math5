@@ -20,6 +20,7 @@
     <string name="imaginary_solutions">Imaginary solutions</string>
     <string name="no_solutions">No solutions</string>
     <string name="solutions">x = %s, y = %s</string>
+    <string name="instruction">Enter values to proceed</string>
     <string-array name="formulas_array">
         <item>Quadratic equation</item>
         <item>Simultaneous equations</item>

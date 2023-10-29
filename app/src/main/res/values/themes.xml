@@ -21,4 +21,11 @@
     </style>
 
     <style name="Theme.Math5" parent="Base.Theme.Math5" />
+
+    <style name="Theme.Math5.Splashscreen" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/black_variant</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/anim_avd_math5</item>
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+        <item name="postSplashScreenTheme">@style/Theme.Math5</item>
+    </style>
 </resources>
