@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Math5</string>
+    <string name="select">SELECCIONA UNA ECUACIÓN</string>
+    <string name="a_tag">Entrada a:</string>
+    <string name="b_tag">Entrada b:</string>
+    <string name="c_tag">Entrada c:</string>
+    <string name="eq_hint">Coeficiente</string>
+    <string name="others_hint">Ingresa un valor</string>
+    <string name="calculate">CALCULAR</string>
+    <string name="invalid_firstdegree">Ecuación de primer grado inválida</string>
+    <string name="invalid_quadratic">Ecuación de segundo grado inválida</string>
+    <string name="imaginary_solutions">Soluciones imaginarias</string>
+    <string name="no_solutions">Sin soluciones</string>
+    <string name="instruction">Ingresa valores para continuar</string>
+    <string-array name="formulas_array">
+        <item>Ecuación de segundo grado</item>
+        <item>Ecuaciones simultáneas</item>
+        <item>Ecuación de primer grado</item>
+    </string-array>
+</resources>

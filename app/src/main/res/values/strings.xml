@@ -1,25 +1,25 @@
 <resources>
-    <string name="app_name">Math5</string>
+    <string name="app_name" translatable="false">Math5</string>
     <string name="select">SELECT A EQUATION</string>
     <string name="a_tag">Input a:</string>
     <string name="b_tag">Input b:</string>
     <string name="c_tag">Input c:</string>
-    <string name="eq_hint">Constant value</string>
+    <string name="eq_hint">Coefficient</string>
     <string name="others_hint">Enter a value</string>
-    <string name="a1_tag">a1:</string>
-    <string name="a2_tag">a2:</string>
-    <string name="b1_tag">b1:</string>
-    <string name="b2_tag">b2:</string>
-    <string name="c1_tag">c1:</string>
-    <string name="c2_tag">c2:</string>
+    <string name="a1_tag" translatable="false">a1:</string>
+    <string name="a2_tag" translatable="false">a2:</string>
+    <string name="b1_tag" translatable="false">b1:</string>
+    <string name="b2_tag" translatable="false">b2:</string>
+    <string name="c1_tag" translatable="false">c1:</string>
+    <string name="c2_tag" translatable="false">c2:</string>
     <string name="calculate">CALCULATE</string>
     <string name="invalid_firstdegree">Invalid first degree equation</string>
-    <string name="result_firstdegree">x = %s</string>
+    <string name="result_firstdegree" translatable="false">x = %s</string>
     <string name="invalid_quadratic">Invalid quadratic equation</string>
-    <string name="quadratic_solutions">x1 = %s, x2 = %s</string>
+    <string name="quadratic_solutions" translatable="false">x1 = %s, x2 = %s</string>
     <string name="imaginary_solutions">Imaginary solutions</string>
     <string name="no_solutions">No solutions</string>
-    <string name="solutions">x = %s, y = %s</string>
+    <string name="solutions" translatable="false">x = %s, y = %s</string>
     <string name="instruction">Enter values to proceed</string>
     <string-array name="formulas_array">
         <item>Quadratic equation</item>
